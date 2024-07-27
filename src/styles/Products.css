@@ -1,0 +1,59 @@
+.left-section h1 {
+  margin-left: 21px;
+  color: white;
+}
+.price {
+  color: blue;
+  font-weight: 700;
+}
+.header {
+  z-index: 1;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: rgb(9, 9, 122);
+}
+.container {
+  padding-top: 60px;
+  padding-left: 10px;
+}
+.right-section {
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.qty {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  top: -8px;
+}
+.product-card {
+  display: flex;
+  column-gap: 50px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+.right-section button {
+  background-color: rgb(245, 51, 51);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+}
+.right-section span {
+  color: white;
+}

@@ -1,0 +1,64 @@
+.product-card {
+  display: flex;
+  column-gap: 50px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+}
+.card-container {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  border: 1px solid rgb(165, 157, 157);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+.card-container:hover {
+  transform: translateY(-10px);
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+}
+span {
+  color: black;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 37px;
+  cursor: pointer;
+}
+.full-title {
+  background-color: rgb(248, 248, 174);
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  top: -60px;
+  padding: 10px;
+  text-align: center;
+}
+.title:hover ~ .full-title {
+  display: block;
+}

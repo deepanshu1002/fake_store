@@ -1,0 +1,40 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signup-form {
+  height: 90%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.signup-form::-webkit-scrollbar {
+  width: 5px;
+}
+
+.signup-form::-webkit-scrollbar-thumb {
+  background: rgb(158, 155, 155);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  margin: auto;
+  background-color: rgb(7, 92, 202);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+  padding: 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 10px 10px;
+  margin-bottom: 30px;
+}

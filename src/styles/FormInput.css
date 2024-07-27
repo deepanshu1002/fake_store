@@ -1,0 +1,31 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+  row-gap: 5px;
+}
+input,
+select {
+  padding: 5px;
+}
+label {
+  color: gray;
+  font-size: small;
+}
+.error,
+.req {
+  color: red;
+}
+.error {
+  font-size: small;
+  display: none;
+}
+input:invalid[focused="true"] ~ .error,
+select:invalid[focused="true"] ~ .error {
+  display: block;
+}
+
+input:invalid[focused="true"],
+select:invalid[focused="true"] {
+  border: 1px solid red;
+}
