@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Products from "./components/Products";
@@ -11,7 +11,7 @@ import ResetPasswor from "./components/ResetPassword";
 import ResetPassword from "./components/ResetPassword";
 
 function App() {
-  const appRouter = createBrowserRouter([
+  const appRouter = createHashRouter([
     {
       path: "/",
       element: <Signup />,
