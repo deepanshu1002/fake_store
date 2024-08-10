@@ -38,8 +38,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const details = JSON.parse(localStorage.getItem("loginDetails"));
-    const data = details.filter((item) => item.email === values.email);
-    if (data.length !== 0) {
+    const data = details?.filter((item) => item.email === values.email);
+    if (data?.length !== 0) {
       const password = decryptPassword(data[0].password, "deepanshujain");
       if (password === values.password) {
         sessionStorage.setItem("name", data[0].name);

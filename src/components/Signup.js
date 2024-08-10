@@ -151,7 +151,7 @@ const Signup = () => {
     },
     {
       id: 13,
-      type: "text",
+      type: "password",
       name: "password",
       label: "Password",
       placeholder: "Password",
@@ -165,7 +165,7 @@ const Signup = () => {
     },
     {
       id: 14,
-      type: "text",
+      type: "password",
       name: "confirmPassword",
       label: "Confirm Password",
       placeholder: "Confirm Password",

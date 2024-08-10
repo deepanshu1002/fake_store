@@ -1,12 +1,18 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ProductCard from "./ProductCard";
 import "../styles/Cart.css";
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import { clearTotal } from "../utils/totalSlice";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart);
+  const dispatch = useDispatch();
+  const total = useSelector((store) => store.total);
+  if (cartItems.length === 0) {
+    dispatch(clearTotal());
+  }
   return (
     <>
       <Header />
@@ -27,6 +33,7 @@ const Cart = () => {
               <Link style={{ textDecoration: "none" }} to="/products">
                 <span className="back">Continue Shopping</span>
               </Link>
+              <div className="total">Total: {"₹" + " " + total.toFixed(2)}</div>
             </div>
             <div className="cart-products">
               <ProductCard data={cartItems} />
